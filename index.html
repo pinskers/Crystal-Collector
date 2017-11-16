@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Scope+One|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+
+  <!-- Javascript and jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/javascript.js"></script>
+  
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 content">
+            <h1>Crystal Collector</h1>
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+
+            <p>
+                There are four crystals below. By clicking on a crystal, you will add a specific 
+                amount of points to your total score.
+            </p>
+
+            <p>
+                You win the game by matching your total score to the random number. You lose the game 
+                if your total score goes above the random number.
+            </p>
+
+            <p>
+                The value of each crystal is hidden from you until you click on it.
+            </p>
+
+            <p>
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
+        </div>
+
+        <div class="col-md-5 content" id="green-box">
+            <h2>39</h2>
+        </div>
+
+        <div class="col-md-5 col-md-offset-2 content" id="score">
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+
+        <div class="col-md-12" id="crystals">
+            <ul>
+                <li id="redcrystal"><img src="images/crystalred.png"></li>
+                <li id="bluecrystal"><img src="images/crystalblue.png"></li>
+                <li id="yellowcrystal"><img src="images/crystalyellow.png"></li>
+                <li id="greencrystal"><img src="images/crystalgreen.png"></li>
+            </ul>
+        </div>
+
+        <div class="col-md-12">
+            <p>Your total score is:</p>
+        </div>
+
+        <div class="col-md-12 content" id="accumulator">
+            <h2>0</h2>
+        </div>       
+    </div>
+    <footer class="footer">
+            <a href=""><img src="images/logo.svg"></a>
+        </footer>  
+</body>
+</html>
